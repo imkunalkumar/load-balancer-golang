@@ -13,6 +13,6 @@ func hello(w http.ResponseWriter, req *http.Request) {
 func main() {
 
 	http.HandleFunc("/", hello)
-
+	fmt.Println("server2 running on port :8082...")
 	http.ListenAndServe(":8082", nil)
 }
